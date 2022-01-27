@@ -1,7 +1,6 @@
 from matrixbot import MatrixBot
 from matrix_client.room import Room
 from bs4 import BeautifulSoup
-import asyncio
 import datetime
 import os
 import requests
