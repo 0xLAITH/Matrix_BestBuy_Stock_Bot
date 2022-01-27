@@ -12,7 +12,7 @@ Matrix bot that notifies users when bestbuy items become in-stock.
 - Create file "watchlist.txt" in directory of the bot and modify watchfile_location appropriately 
 
 # Usage
-- Add a link to the bot's watchlist (will refresh every 30 seconds and notify it's instock every 60 seconds until OOS again):
+- Add a link to the bot's watchlist (will refresh every 30 seconds and notify it's in-stock every 60 seconds until out-of-stock again):
 
   !add [link]
   
