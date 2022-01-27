@@ -39,6 +39,8 @@ def add_to_list(bot, room, user, link):
             #check the status is 200 OK to reduce false positives
             elif r.status_code == 200:
                 print("Stock found")
+            else:
+                print(RandomVariableToCauseException)
         except:
             print("{} Retry in 30 sec".format(datetime.datetime.now()))
             time.sleep(30)
