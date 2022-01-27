@@ -13,6 +13,9 @@ Matrix bot that notifies users when bestbuy items become in-stock.
 
 # Usage
 - Add a link to the bot's watchlist (will refresh every 30 seconds and notify it's instock every 60 seconds until OOS again)
+
   !add [link]
+  
 - View active watchlist (just prints the list object, cba to make this look nice)
+
   !list
