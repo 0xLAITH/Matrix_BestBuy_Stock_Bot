@@ -36,7 +36,8 @@ def add_to_list(bot, room, user, link):
             s = soup.select('button[data-button-state="SOLD_OUT"]')
             if s:
                 print(RandomVariableToCauseException)
-            else:
+            #check the status is 200 OK to reduce false positives
+            elif r.status_code == 200:
                 print("Stock found")
         except:
             print("{} Retry in 30 sec".format(datetime.datetime.now()))
