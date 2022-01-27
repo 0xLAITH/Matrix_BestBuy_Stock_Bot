@@ -67,7 +67,7 @@ class MyBot(MatrixBot):
         if event["type"] == "m.room.message":
             if event["content"]["body"].split()[0] == "!add":
                 watchlist.append(event["content"]["body"].split()[1])
-                watchfile = open(watchfile_location, "w")
+                watchfile = open(watchfile_location, "a")
                 watchfile.write(event["content"]["body"].split()[1] + " " + event["sender"] + '\n')
                 watchfile.close()
                 self.say(room, "Link added to watch list!", mention=event["sender"])
